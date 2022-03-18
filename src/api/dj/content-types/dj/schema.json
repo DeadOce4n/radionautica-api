@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "djs",
+  "info": {
+    "singularName": "dj",
+    "pluralName": "djs",
+    "displayName": "Dj",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nick": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 4
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
